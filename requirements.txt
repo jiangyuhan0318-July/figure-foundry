@@ -1,0 +1,7 @@
+# Versions used to render and verify the published examples (Python 3.13).
+matplotlib==3.11.1
+numpy==2.5.1
+scipy==1.18.0
+scikit-learn==1.9.0
+Pillow==12.3.0
+pypdf==6.16.2

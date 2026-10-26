@@ -1,0 +1,21 @@
+FigureFoundry
+Copyright 2026 July
+
+Workflow synthesis and modifications made on 2026-10-26:
+The selected instructions were rewritten and organized into one data-plot/schematic
+workflow. Mandatory brand onboarding, gallery voting, image-model routing, HTML/PPTX
+defaults, global connector limits, and multi-file schema requirements were replaced
+with scoped choices. July's palettes and the small export helper were added.
+
+Acknowledged sources:
+- Diagram Design, Copyright (c) 2025 Cathryn Lavery; MIT.
+- AgentFigureGallery, Copyright (c) 2026 AgentFigureGallery contributors; MIT.
+- Open Research Skills, Copyright 2026 Open Research Skills contributors; Apache-2.0.
+
+Open Research Skills upstream notice:
+This product contains original public instructions, tests, templates, and scripts
+released under the Apache License, Version 2.0.
+
+See references/sources-and-decisions.md for repositories and pinned commits.
+MIT license texts are retained under LICENSES/. The Apache-2.0 text is in LICENSE.
+No third-party reference artwork or datasets are bundled.

@@ -1,0 +1,102 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FigureFoundry · 图形画廊</title>
+<style>
+:root{color-scheme:light;--ink:#26313d;--muted:#687681;--line:#e1e6ea;--orange:#f29440}
+*{box-sizing:border-box}body{margin:0;background:#f7f8fa;color:var(--ink);font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1400px;margin:auto;padding:46px 30px}header h1{margin:0;font-size:clamp(30px,4vw,48px);letter-spacing:-1.6px}
+header p{color:var(--muted);margin:8px 0 22px}.eyebrow{font-size:12px;letter-spacing:2px;color:#a85e24;font-weight:700}
+nav{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:26px 0 30px}button,input{font:inherit}
+nav button{border:1px solid var(--line);background:white;border-radius:20px;padding:7px 16px;cursor:pointer;color:var(--ink)}
+nav button.active{background:var(--ink);border-color:var(--ink);color:white}input{margin-left:auto;border:1px solid var(--line);border-radius:8px;padding:8px 12px;width:230px;background:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card[hidden]{display:none}.thumb{display:block;background:white;width:100%;padding:0;border:0;cursor:zoom-in}.thumb img{display:block;width:100%;aspect-ratio:6.4/4.7;object-fit:contain}
+.copy{padding:15px 20px 20px;border-top:1px solid #f0f2f4}.num{font-size:11px;font-weight:700;color:#a85e24}.copy h2{font-size:18px;margin:2px 0 0}.copy p{margin:1px 0 7px;color:var(--muted);font-size:13px}.copy small{display:block;min-height:40px;color:var(--muted);font-size:11px}.copy footer{margin-top:12px;font-size:12px}a{color:#246180;text-decoration:none}a:hover{text-decoration:underline}
+.notice{margin:32px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+dialog{width:min(1200px,96vw);max-height:96vh;border:0;border-radius:12px;padding:14px;background:white;color:var(--ink)}dialog::backdrop{background:#17212bbd}
+.viewerbar{display:flex;align-items:center;gap:10px;padding:0 4px 8px}.viewerbar strong{margin-right:auto}.viewerbar button{border:1px solid var(--line);background:white;border-radius:7px;padding:5px 12px;cursor:pointer}dialog img{display:block;width:100%;max-height:82vh;object-fit:contain}
+@media(max-width:1050px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}input{margin-left:0}}@media(max-width:650px){main{padding:28px 16px}.grid{grid-template-columns:1fr}nav{gap:7px}nav button{padding:6px 11px}input{width:100%}}
+</style><main><header><div class="eyebrow">FIGUREFOUNDRY / 图件工坊</div><h1>24 种图型，一次看清。</h1>
+<p>点击任一图片放大；方向键切换。三组个人配色，四类用途，每张都附 PNG、SVG、PDF。</p></header>
+<nav><button class="active" data-filter="0">全部 24 种</button><button data-filter="1">比较与变化</button><button data-filter="2">分布与关系</button><button data-filter="3">科研分析</button><button data-filter="4">组成与结构</button><input id="search" aria-label="搜索图型" placeholder="搜索：热图 / ROC / 架构…"></nav><section class="grid"><article class="card" data-group="1" data-search="分组柱状图 Grouped bar">
+<button class="thumb" data-slug="01_grouped_bar" data-title="分组柱状图"><img src="figures/01_grouped_bar.png" loading="lazy" alt="分组柱状图"></button>
+<div class="copy"><span class="num">01</span><h2>分组柱状图</h2><p>Grouped bar</p><small>Mean ± SD; n=8 per cell</small><footer><a href="figures/01_grouped_bar.png" target="_blank">PNG</a> · <a href="figures/01_grouped_bar.svg" target="_blank">SVG</a> · <a href="figures/01_grouped_bar.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="1" data-search="趋势与误差带 Trend + uncertainty">
+<button class="thumb" data-slug="02_trend" data-title="趋势与误差带"><img src="figures/02_trend.png" loading="lazy" alt="趋势与误差带"></button>
+<div class="copy"><span class="num">02</span><h2>趋势与误差带</h2><p>Trend + uncertainty</p><small>Mean ± SD across 8 trajectories</small><footer><a href="figures/02_trend.png" target="_blank">PNG</a> · <a href="figures/02_trend.svg" target="_blank">SVG</a> · <a href="figures/02_trend.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="1" data-search="配对斜率图 Paired slope plot">
+<button class="thumb" data-slug="03_paired" data-title="配对斜率图"><img src="figures/03_paired.png" loading="lazy" alt="配对斜率图"></button>
+<div class="copy"><span class="num">03</span><h2>配对斜率图</h2><p>Paired slope plot</p><small>14 matched units; individual observations</small><footer><a href="figures/03_paired.png" target="_blank">PNG</a> · <a href="figures/03_paired.svg" target="_blank">SVG</a> · <a href="figures/03_paired.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="1" data-search="森林与区间图 Forest / interval plot">
+<button class="thumb" data-slug="04_forest" data-title="森林与区间图"><img src="figures/04_forest.png" loading="lazy" alt="森林与区间图"></button>
+<div class="copy"><span class="num">04</span><h2>森林与区间图</h2><p>Forest / interval plot</p><small>95% t intervals; 12 paired units per row</small><footer><a href="figures/04_forest.png" target="_blank">PNG</a> · <a href="figures/04_forest.svg" target="_blank">SVG</a> · <a href="figures/04_forest.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="1" data-search="棒棒糖排序图 Lollipop ranking">
+<button class="thumb" data-slug="05_lollipop" data-title="棒棒糖排序图"><img src="figures/05_lollipop.png" loading="lazy" alt="棒棒糖排序图"></button>
+<div class="copy"><span class="num">05</span><h2>棒棒糖排序图</h2><p>Lollipop ranking</p><small>Assigned signal strengths; stems start at zero</small><footer><a href="figures/05_lollipop.png" target="_blank">PNG</a> · <a href="figures/05_lollipop.svg" target="_blank">SVG</a> · <a href="figures/05_lollipop.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="1" data-search="瀑布图 Waterfall">
+<button class="thumb" data-slug="06_waterfall" data-title="瀑布图"><img src="figures/06_waterfall.png" loading="lazy" alt="瀑布图"></button>
+<div class="copy"><span class="num">06</span><h2>瀑布图</h2><p>Waterfall</p><small>Signed changes reconcile with final total</small><footer><a href="figures/06_waterfall.png" target="_blank">PNG</a> · <a href="figures/06_waterfall.svg" target="_blank">SVG</a> · <a href="figures/06_waterfall.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="箱线与观测点 Box + observations">
+<button class="thumb" data-slug="07_box" data-title="箱线与观测点"><img src="figures/07_box.png" loading="lazy" alt="箱线与观测点"></button>
+<div class="copy"><span class="num">07</span><h2>箱线与观测点</h2><p>Box + observations</p><small>Median / IQR; 60 observations per group</small><footer><a href="figures/07_box.png" target="_blank">PNG</a> · <a href="figures/07_box.svg" target="_blank">SVG</a> · <a href="figures/07_box.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="小提琴分布图 Violin distribution">
+<button class="thumb" data-slug="08_violin" data-title="小提琴分布图"><img src="figures/08_violin.png" loading="lazy" alt="小提琴分布图"></button>
+<div class="copy"><span class="num">08</span><h2>小提琴分布图</h2><p>Violin distribution</p><small>Density + median / IQR; n=60 per group</small><footer><a href="figures/08_violin.png" target="_blank">PNG</a> · <a href="figures/08_violin.svg" target="_blank">SVG</a> · <a href="figures/08_violin.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="直方与密度图 Histogram + KDE">
+<button class="thumb" data-slug="09_histogram" data-title="直方与密度图"><img src="figures/09_histogram.png" loading="lazy" alt="直方与密度图"></button>
+<div class="copy"><span class="num">09</span><h2>直方与密度图</h2><p>Histogram + KDE</p><small>Density normalization; Gaussian KDE</small><footer><a href="figures/09_histogram.png" target="_blank">PNG</a> · <a href="figures/09_histogram.svg" target="_blank">SVG</a> · <a href="figures/09_histogram.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="山脊密度图 Ridgeline density">
+<button class="thumb" data-slug="10_ridge" data-title="山脊密度图"><img src="figures/10_ridge.png" loading="lazy" alt="山脊密度图"></button>
+<div class="copy"><span class="num">10</span><h2>山脊密度图</h2><p>Ridgeline density</p><small>Five batches; 120 values per batch</small><footer><a href="figures/10_ridge.png" target="_blank">PNG</a> · <a href="figures/10_ridge.svg" target="_blank">SVG</a> · <a href="figures/10_ridge.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="回归散点图 Scatter + regression">
+<button class="thumb" data-slug="11_regression" data-title="回归散点图"><img src="figures/11_regression.png" loading="lazy" alt="回归散点图"></button>
+<div class="copy"><span class="num">11</span><h2>回归散点图</h2><p>Scatter + regression</p><small>OLS line; 95% interval for mean response</small><footer><a href="figures/11_regression.png" target="_blank">PNG</a> · <a href="figures/11_regression.svg" target="_blank">SVG</a> · <a href="figures/11_regression.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="2" data-search="气泡图 Bubble plot">
+<button class="thumb" data-slug="12_bubble" data-title="气泡图"><img src="figures/12_bubble.png" loading="lazy" alt="气泡图"></button>
+<div class="copy"><span class="num">12</span><h2>气泡图</h2><p>Bubble plot</p><small>Marker area encodes assigned volume</small><footer><a href="figures/12_bubble.png" target="_blank">PNG</a> · <a href="figures/12_bubble.svg" target="_blank">SVG</a> · <a href="figures/12_bubble.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="相关热图 Correlation heat map">
+<button class="thumb" data-slug="13_heatmap" data-title="相关热图"><img src="figures/13_heatmap.png" loading="lazy" alt="相关热图"></button>
+<div class="copy"><span class="num">13</span><h2>相关热图</h2><p>Correlation heat map</p><small>Pearson r from 100 simulated observations</small><footer><a href="figures/13_heatmap.png" target="_blank">PNG</a> · <a href="figures/13_heatmap.svg" target="_blank">SVG</a> · <a href="figures/13_heatmap.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="PCA降维图 PCA embedding">
+<button class="thumb" data-slug="14_pca" data-title="PCA降维图"><img src="figures/14_pca.png" loading="lazy" alt="PCA降维图"></button>
+<div class="copy"><span class="num">14</span><h2>PCA降维图</h2><p>PCA embedding</p><small>SVD of standardized data; 135 observations</small><footer><a href="figures/14_pca.png" target="_blank">PNG</a> · <a href="figures/14_pca.svg" target="_blank">SVG</a> · <a href="figures/14_pca.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="ROC曲线 ROC curves">
+<button class="thumb" data-slug="15_roc" data-title="ROC曲线"><img src="figures/15_roc.png" loading="lazy" alt="ROC曲线"></button>
+<div class="copy"><span class="num">15</span><h2>ROC曲线</h2><p>ROC curves</p><small>120 positives / 280 negatives; actual ranked AUC</small><footer><a href="figures/15_roc.png" target="_blank">PNG</a> · <a href="figures/15_roc.svg" target="_blank">SVG</a> · <a href="figures/15_roc.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="PR曲线 Precision–recall curves">
+<button class="thumb" data-slug="16_pr" data-title="PR曲线"><img src="figures/16_pr.png" loading="lazy" alt="PR曲线"></button>
+<div class="copy"><span class="num">16</span><h2>PR曲线</h2><p>Precision–recall curves</p><small>AP from ranked predictions; baseline = prevalence</small><footer><a href="figures/16_pr.png" target="_blank">PNG</a> · <a href="figures/16_pr.svg" target="_blank">SVG</a> · <a href="figures/16_pr.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="火山图 Volcano plot">
+<button class="thumb" data-slug="17_volcano" data-title="火山图"><img src="figures/17_volcano.png" loading="lazy" alt="火山图"></button>
+<div class="copy"><span class="num">17</span><h2>火山图</h2><p>Volcano plot</p><small>Welch tests + BH correction; n=12 per group</small><footer><a href="figures/17_volcano.png" target="_blank">PNG</a> · <a href="figures/17_volcano.svg" target="_blank">SVG</a> · <a href="figures/17_volcano.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="3" data-search="生存曲线 Kaplan–Meier curves">
+<button class="thumb" data-slug="18_survival" data-title="生存曲线"><img src="figures/18_survival.png" loading="lazy" alt="生存曲线"></button>
+<div class="copy"><span class="num">18</span><h2>生存曲线</h2><p>Kaplan–Meier curves</p><small>60 per cohort; ticks indicate censoring</small><footer><a href="figures/18_survival.png" target="_blank">PNG</a> · <a href="figures/18_survival.svg" target="_blank">SVG</a> · <a href="figures/18_survival.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="堆叠组成柱状图 Stacked composition">
+<button class="thumb" data-slug="19_stacked" data-title="堆叠组成柱状图"><img src="figures/19_stacked.png" loading="lazy" alt="堆叠组成柱状图"></button>
+<div class="copy"><span class="num">19</span><h2>堆叠组成柱状图</h2><p>Stacked composition</p><small>Mean fractions; 10 samples per batch</small><footer><a href="figures/19_stacked.png" target="_blank">PNG</a> · <a href="figures/19_stacked.svg" target="_blank">SVG</a> · <a href="figures/19_stacked.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="堆叠面积图 Stacked area">
+<button class="thumb" data-slug="20_area" data-title="堆叠面积图"><img src="figures/20_area.png" loading="lazy" alt="堆叠面积图"></button>
+<div class="copy"><span class="num">20</span><h2>堆叠面积图</h2><p>Stacked area</p><small>Three positive shares normalized to 100%</small><footer><a href="figures/20_area.png" target="_blank">PNG</a> · <a href="figures/20_area.svg" target="_blank">SVG</a> · <a href="figures/20_area.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="雷达图 Radar profile">
+<button class="thumb" data-slug="21_radar" data-title="雷达图"><img src="figures/21_radar.png" loading="lazy" alt="雷达图"></button>
+<div class="copy"><span class="num">21</span><h2>雷达图</h2><p>Radar profile</p><small>All axes use assigned 0–100 benefit scores</small><footer><a href="figures/21_radar.png" target="_blank">PNG</a> · <a href="figures/21_radar.svg" target="_blank">SVG</a> · <a href="figures/21_radar.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="关系网络图 Relationship network">
+<button class="thumb" data-slug="22_network" data-title="关系网络图"><img src="figures/22_network.png" loading="lazy" alt="关系网络图"></button>
+<div class="copy"><span class="num">22</span><h2>关系网络图</h2><p>Relationship network</p><small>Toy undirected graph; width = assigned weight</small><footer><a href="figures/22_network.png" target="_blank">PNG</a> · <a href="figures/22_network.svg" target="_blank">SVG</a> · <a href="figures/22_network.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="判断流程图 Decision workflow">
+<button class="thumb" data-slug="23_flowchart" data-title="判断流程图"><img src="figures/23_flowchart.png" loading="lazy" alt="判断流程图"></button>
+<div class="copy"><span class="num">23</span><h2>判断流程图</h2><p>Decision workflow</p><small>Toy logic; dashed line denotes retry</small><footer><a href="figures/23_flowchart.png" target="_blank">PNG</a> · <a href="figures/23_flowchart.svg" target="_blank">SVG</a> · <a href="figures/23_flowchart.pdf" target="_blank">PDF</a></footer></div></article>
+<article class="card" data-group="4" data-search="模型架构图 Model architecture">
+<button class="thumb" data-slug="24_architecture" data-title="模型架构图"><img src="figures/24_architecture.png" loading="lazy" alt="模型架构图"></button>
+<div class="copy"><span class="num">24</span><h2>模型架构图</h2><p>Model architecture</p><small>Toy model; dashed paths are training-only</small><footer><a href="figures/24_architecture.png" target="_blank">PNG</a> · <a href="figures/24_architecture.svg" target="_blank">SVG</a> · <a href="figures/24_architecture.pdf" target="_blank">PDF</a></footer></div></article></section>
+<div class="notice">所有数值均为固定随机种子生成的合成数据，结构图使用虚构关系。统计量从这些输入实际计算，不代表真实实验。<br>
+<a href="GALLERY.md">中文图型索引</a> · <a href="synthetic_data.json">源数据</a> · <a href="render_gallery.py">绘图代码</a> · <a href="gallery_checks.json">绘图记录</a></div></main>
+<dialog id="viewer"><div class="viewerbar"><strong id="viewer-title"></strong><button id="prev" aria-label="上一张">←</button><button id="next" aria-label="下一张">→</button><button id="close">关闭</button></div><img id="viewer-image" alt=""></dialog>
+<script>
+const cards=[...document.querySelectorAll('.card')], thumbs=[...document.querySelectorAll('.thumb')], dialog=document.querySelector('#viewer');let group='0',index=0;
+function filter(){const q=document.querySelector('#search').value.trim().toLowerCase();cards.forEach(c=>c.hidden=(group!=='0'&&c.dataset.group!==group)||!c.dataset.search.toLowerCase().includes(q))}
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{group=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));filter()});document.querySelector('#search').oninput=filter;
+function show(i){index=(i+thumbs.length)%thumbs.length;const b=thumbs[index];document.querySelector('#viewer-image').src='figures/'+b.dataset.slug+'.png';document.querySelector('#viewer-image').alt=b.dataset.title;document.querySelector('#viewer-title').textContent=String(index+1).padStart(2,'0')+' / '+b.dataset.title;if(!dialog.open)dialog.showModal()}
+thumbs.forEach((b,i)=>b.onclick=()=>show(i));document.querySelector('#prev').onclick=()=>show(index-1);document.querySelector('#next').onclick=()=>show(index+1);document.querySelector('#close').onclick=()=>dialog.close();
+document.addEventListener('keydown',e=>{if(dialog.open&&e.key==='ArrowLeft')show(index-1);if(dialog.open&&e.key==='ArrowRight')show(index+1)});
+</script></html>

@@ -1,0 +1,51 @@
+{
+  "synthetic": true,
+  "seed": 20261026,
+  "input_rows": 504,
+  "excluded_rows": 0,
+  "independent_unit": "simulated run ID",
+  "repeated_unit": "training checkpoint within a run",
+  "n_runs_per_method": 8,
+  "uncertainty": "sample SD across runs, ddof=1",
+  "palette": [
+    "#C8C8C8",
+    "#F1D5B3",
+    "#F29440"
+  ],
+  "width_mm": 180,
+  "height_mm": 140,
+  "png_dpi": 300,
+  "matplotlib_version": "3.11.1",
+  "summary": [
+    {
+      "method": "Baseline",
+      "n_runs": 8,
+      "score_mean": 88.16012612448304,
+      "score_sd": 0.3595737094697832,
+      "latency_mean_ms": 7.842613824494597,
+      "latency_sd_ms": 0.25908390404294834
+    },
+    {
+      "method": "Variant A",
+      "n_runs": 8,
+      "score_mean": 90.61191510294843,
+      "score_sd": 0.6735041230669898,
+      "latency_mean_ms": 9.335222336588606,
+      "latency_sd_ms": 0.20740452736065568
+    },
+    {
+      "method": "Variant B",
+      "n_runs": 8,
+      "score_mean": 93.39450275010957,
+      "score_sd": 0.8394786507268122,
+      "latency_mean_ms": 10.851466801830565,
+      "latency_sd_ms": 0.16210231233975386
+    }
+  ],
+  "text_outside_canvas": [],
+  "outputs": {
+    "png": "synthetic_comparison.png",
+    "svg": "synthetic_comparison.svg",
+    "pdf": "synthetic_comparison.pdf"
+  }
+}

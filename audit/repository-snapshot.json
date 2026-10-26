@@ -1,0 +1,69 @@
+{
+  "checked_date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "source": "GitHub repository REST API",
+  "ranking": [
+    {
+      "repo": "cathrynlavery/diagram-design",
+      "stars": 60995,
+      "updated": "2026-10-25T18:01:28Z",
+      "pushed": "2026-10-24T00:49:53Z",
+      "license": "MIT",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "default_branch": "main"
+    },
+    {
+      "repo": "BAIKEMARK/happy-figure-skill",
+      "stars": 172,
+      "updated": "2026-10-24T01:38:07Z",
+      "pushed": "2026-06-03T14:50:33Z",
+      "license": "NOASSERTION",
+      "url": "https://github.com/BAIKEMARK/happy-figure-skill",
+      "default_branch": "main"
+    },
+    {
+      "repo": "Dsadd4/AgentFigureGallery",
+      "stars": 170,
+      "updated": "2026-10-25T10:10:28Z",
+      "pushed": "2026-09-05T02:17:16Z",
+      "license": "MIT",
+      "url": "https://github.com/Dsadd4/AgentFigureGallery",
+      "default_branch": "main"
+    },
+    {
+      "repo": "gxCaesar/open-research-skills",
+      "stars": 58,
+      "updated": "2026-10-23T12:04:34Z",
+      "pushed": "2026-09-23T08:44:59Z",
+      "license": "Apache-2.0",
+      "url": "https://github.com/gxCaesar/open-research-skills",
+      "default_branch": "main"
+    },
+    {
+      "repo": "plbbl/academic-diagram-skill",
+      "stars": 6,
+      "updated": "2026-10-25T14:51:23Z",
+      "pushed": "2026-09-05T05:14:16Z",
+      "license": "NOASSERTION",
+      "url": "https://github.com/plbbl/academic-diagram-skill",
+      "default_branch": "main"
+    }
+  ],
+  "pinned_selected_sources": [
+    {
+      "repo": "cathrynlavery/diagram-design",
+      "commit": "0b9b10cab3dbf695642fa1a6c4b4f60df9083689",
+      "date": "2026-10-24T00:49:52Z"
+    },
+    {
+      "repo": "Dsadd4/AgentFigureGallery",
+      "commit": "0b55f26fd575a00b5ebacb619d953b0a008e0126",
+      "date": "2026-09-05T02:17:15Z"
+    },
+    {
+      "repo": "gxCaesar/open-research-skills",
+      "commit": "c79bac60f882b626e1754bff95101441e165e4ec",
+      "date": "2026-09-23T08:44:59Z"
+    }
+  ]
+}

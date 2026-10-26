@@ -1,0 +1,331 @@
+{
+  "skill": "figure-foundry",
+  "synthetic": true,
+  "seed": 261026,
+  "individual_plots": 24,
+  "quantitative": 21,
+  "schematics": 3,
+  "contact_sheets": 4,
+  "export_files_checked": 84,
+  "text_outside_canvas": [],
+  "roc_ap_cross_checked_against": "scikit-learn",
+  "classification_metrics": [
+    {
+      "model": 1,
+      "roc_auc": 0.8038392857142858,
+      "average_precision": 0.6248756359261265
+    },
+    {
+      "model": 2,
+      "roc_auc": 0.9149107142857144,
+      "average_precision": 0.8170704556640324
+    },
+    {
+      "model": 3,
+      "roc_auc": 0.9391071428571429,
+      "average_precision": 0.8891241632998276
+    }
+  ],
+  "bh_cross_checked_against": "scipy.stats.false_discovery_control",
+  "volcano_counts": {
+    "down": 21,
+    "up": 21,
+    "other": 118
+  },
+  "pca_explained_variance_ratio": [
+    0.4156131513404809,
+    0.28092438142641285,
+    0.10164051594400815,
+    0.09222977705293964,
+    0.06371880440058535,
+    0.04587336983557308
+  ],
+  "pca_cross_checked_against": "sklearn.decomposition.PCA",
+  "normalized_composition_and_area": true,
+  "waterfall_final_total": 122,
+  "survival_risk_set_cross_checks": [
+    {
+      "n": 60,
+      "events": 54,
+      "censored": 6,
+      "final_survival": 0.035016835016835
+    },
+    {
+      "n": 60,
+      "events": 42,
+      "censored": 18,
+      "final_survival": 0.23307059920332224
+    },
+    {
+      "n": 60,
+      "events": 31,
+      "censored": 29,
+      "final_survival": 0.3560585248947993
+    }
+  ],
+  "exports": [
+    {
+      "id": "01_grouped_bar",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 17,
+      "pdf_pages": 1
+    },
+    {
+      "id": "02_trend",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 20,
+      "pdf_pages": 1
+    },
+    {
+      "id": "03_paired",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 13,
+      "pdf_pages": 1
+    },
+    {
+      "id": "04_forest",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 18,
+      "pdf_pages": 1
+    },
+    {
+      "id": "05_lollipop",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 18,
+      "pdf_pages": 1
+    },
+    {
+      "id": "06_waterfall",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 24,
+      "pdf_pages": 1
+    },
+    {
+      "id": "07_box",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 12,
+      "pdf_pages": 1
+    },
+    {
+      "id": "08_violin",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 12,
+      "pdf_pages": 1
+    },
+    {
+      "id": "09_histogram",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 23,
+      "pdf_pages": 1
+    },
+    {
+      "id": "10_ridge",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 14,
+      "pdf_pages": 1
+    },
+    {
+      "id": "11_regression",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 17,
+      "pdf_pages": 1
+    },
+    {
+      "id": "12_bubble",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 19,
+      "pdf_pages": 1
+    },
+    {
+      "id": "13_heatmap",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 55,
+      "pdf_pages": 1
+    },
+    {
+      "id": "14_pca",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 20,
+      "pdf_pages": 1
+    },
+    {
+      "id": "15_roc",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 21,
+      "pdf_pages": 1
+    },
+    {
+      "id": "16_pr",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 21,
+      "pdf_pages": 1
+    },
+    {
+      "id": "17_volcano",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 24,
+      "pdf_pages": 1
+    },
+    {
+      "id": "18_survival",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 24,
+      "pdf_pages": 1
+    },
+    {
+      "id": "19_stacked",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 18,
+      "pdf_pages": 1
+    },
+    {
+      "id": "20_area",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 19,
+      "pdf_pages": 1
+    },
+    {
+      "id": "21_radar",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 15,
+      "pdf_pages": 1
+    },
+    {
+      "id": "22_network",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 10,
+      "pdf_pages": 1
+    },
+    {
+      "id": "23_flowchart",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 12,
+      "pdf_pages": 1
+    },
+    {
+      "id": "24_architecture",
+      "png_pixels": [
+        1920,
+        1410
+      ],
+      "svg_native_text_count": 10,
+      "pdf_pages": 1
+    },
+    {
+      "id": "gallery_01",
+      "png_pixels": [
+        2700,
+        1746
+      ],
+      "svg_native_text_count": 108,
+      "pdf_pages": 1
+    },
+    {
+      "id": "gallery_02",
+      "png_pixels": [
+        2700,
+        1746
+      ],
+      "svg_native_text_count": 95,
+      "pdf_pages": 1
+    },
+    {
+      "id": "gallery_03",
+      "png_pixels": [
+        2700,
+        1746
+      ],
+      "svg_native_text_count": 163,
+      "pdf_pages": 1
+    },
+    {
+      "id": "gallery_04",
+      "png_pixels": [
+        2700,
+        1746
+      ],
+      "svg_native_text_count": 81,
+      "pdf_pages": 1
+    }
+  ],
+  "html_cards": 24,
+  "html_static_links_checked": 100,
+  "browser_interaction_tested": false,
+  "browser_interaction_note": "The in-app browser blocks file: URLs. Static HTML/asset links checked; search/filter/dialog not browser-tested.",
+  "visual_review": "Four actual rendered contact sheets inspected; radar legend added; flow Yes label and model branch attachments corrected; heatmap converted to vector cells.",
+  "limits": [
+    "Synthetic inputs and toy relationships",
+    "No native PPTX or draw.io run",
+    "No independent blind skill evaluation",
+    "KM helper demonstrated only on these untied inputs"
+  ]
+}

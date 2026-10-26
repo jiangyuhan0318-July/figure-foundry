@@ -1,0 +1,27 @@
+{
+  "saved_on": "2026-10-25",
+  "source": "July's explicitly supplied palette preferences, also recorded in anti-defensive-writing",
+  "palettes": {
+    "warm-orange": {
+      "name_zh": "暖橙组",
+      "colors": ["#C8C8C8", "#F1D5B3", "#F29440"],
+      "color_names_zh": ["灰色", "浅橙", "橙色"]
+    },
+    "purple-blue-pink": {
+      "name_zh": "紫蓝粉组",
+      "colors": ["#A3A4CA", "#6A94BA", "#ECA9AA"],
+      "color_names_zh": ["淡紫", "蓝灰", "浅肉粉"]
+    },
+    "skin-blue": {
+      "name_zh": "浅肤蓝组",
+      "colors": ["#FFDBD1", "#D6E2EE", "#0183BB"],
+      "color_names_zh": ["浅肤色", "极浅蓝", "深蓝"]
+    }
+  },
+  "neutral": {
+    "background": "#FFFFFF",
+    "ink": "#26313D",
+    "muted": "#687681",
+    "grid": "#E8ECEF"
+  }
+}

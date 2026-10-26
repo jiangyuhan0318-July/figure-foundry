@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "skill_name": "figure-foundry",
+  "skill_format_validation": "quick_validate.py passed after rename; portable copy byte-identical",
+  "source_version_check": "three analyzed SKILL.md blobs match pinned repository commits",
+  "numerical_route_executed": true,
+  "schematic_route_runtime_tested": true,
+  "synthetic_data": true,
+  "seed": 20261026,
+  "rows": 504,
+  "n_runs_per_method": 8,
+  "excluded_rows": 0,
+  "independent_statistical_cross_checks": [
+    {
+      "method": "Baseline",
+      "statistic": "score_mean",
+      "value": 88.16012612448304,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Baseline",
+      "statistic": "score_sd",
+      "value": 0.35957370946978323,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Baseline",
+      "statistic": "latency_mean_ms",
+      "value": 7.842613824494596,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Baseline",
+      "statistic": "latency_sd_ms",
+      "value": 0.25908390404294834,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant A",
+      "statistic": "score_mean",
+      "value": 90.61191510294843,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant A",
+      "statistic": "score_sd",
+      "value": 0.6735041230669898,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant A",
+      "statistic": "latency_mean_ms",
+      "value": 9.335222336588606,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant A",
+      "statistic": "latency_sd_ms",
+      "value": 0.20740452736065568,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant B",
+      "statistic": "score_mean",
+      "value": 93.39450275010955,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant B",
+      "statistic": "score_sd",
+      "value": 0.8394786507268122,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant B",
+      "statistic": "latency_mean_ms",
+      "value": 10.851466801830563,
+      "matches_plot_summary": true
+    },
+    {
+      "method": "Variant B",
+      "statistic": "latency_sd_ms",
+      "value": 0.16210231233975386,
+      "matches_plot_summary": true
+    }
+  ],
+  "palette_values_exact": [
+    "#C8C8C8",
+    "#F1D5B3",
+    "#F29440",
+    "#A3A4CA",
+    "#6A94BA",
+    "#ECA9AA",
+    "#FFDBD1",
+    "#D6E2EE",
+    "#0183BB"
+  ],
+  "png_pixels": [
+    2125,
+    1653
+  ],
+  "png_dpi": [
+    299.9994,
+    299.9994
+  ],
+  "pdf_size_mm": [
+    179.99999999998556,
+    140.00000000000443
+  ],
+  "svg_viewbox": "0 0 510.23622 396.850394",
+  "svg_native_text_elements": 42,
+  "svg_contains_raster_images": false,
+  "text_outside_canvas": [],
+  "manual_visual_review": "Final PNG inspected after spacing, font-weight, and legend-placement fixes; no visible label clipping or legend/data overlap",
+  "portable_skill_file_count": 10,
+  "portable_copy_matches_installed": true,
+  "skill_file_fingerprints": [
+    {
+      "path": "assets/palettes.json",
+      "sha256": "7c53d2c0639568488a0bb7d8d73bafab64f31388b5b988e3d7cf33081f2697a2"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fb9b0dfb9d2f9e06c7278a319eeca675a72f35684b23e40acf6e51e355c2f192"
+    },
+    {
+      "path": "LICENSES/MIT-AgentFigureGallery.txt",
+      "sha256": "ee09f76149630ec6c8edc46166a62b4ab6f924fe5ddfbba43bfff2caa3754c1c"
+    },
+    {
+      "path": "LICENSES/MIT-diagram-design.txt",
+      "sha256": "8c9a53d1480f7f7c242170672d1da6de474739a97459b7c4a63dd5357330c631"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "31335c8ebe36bd049ff709133b4ec604cb1661cd7409dd0f64b44e3a571bf718"
+    },
+    {
+      "path": "references/data-plots.md",
+      "sha256": "46e648348a02d4c1ebd6af192ee336b7374c861646216813db4c5d74a37588ab"
+    },
+    {
+      "path": "references/diagrams.md",
+      "sha256": "acf8ec0c00425a09156f6219fd93b871927d26879dff11523ba6f5e2e965a762"
+    },
+    {
+      "path": "references/sources-and-decisions.md",
+      "sha256": "35e9bcaac1a0638f84c66e4c743f78e4cbe533d5dce1bfa67ca83859e54c2655"
+    },
+    {
+      "path": "scripts/figure_style.py",
+      "sha256": "b962a46fda2b5208b95a90f3e0967bdbd776f0a3f2e8015644d2374baa6d771f"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "c169644a64f7aeef30b38ea9c7249bce2b7657e334713e14416ff061c10cc6c8"
+    }
+  ],
+  "skill_zip": "figure-foundry-skill.zip",
+  "zip_crc_check": "passed",
+  "local_markdown_file_links_checked": 268,
+  "broken_local_links": [],
+  "limits": [
+    "synthetic educational data, not measured model performance",
+    "no independent blind skill evaluation",
+    "no guarantee of arbitrary venue-specific submission compliance",
+    "native PPTX/draw.io routes not runtime tested",
+    "offline HTML interaction not browser tested; browser blocks file URLs"
+  ],
+  "native_pptx_runtime_tested": false,
+  "rename": {
+    "display_name": "FigureFoundry",
+    "invocation": "$figure-foundry",
+    "old_skill_directory_absent": true,
+    "old_project_directory_absent": true
+  },
+  "gallery_verification": "gallery/verification.json",
+  "gallery_examples": 24,
+  "gallery_export_files": 84,
+  "gallery_zip": "figure-foundry-gallery.zip",
+  "gallery_zip_crc_check": "passed",
+  "publication_preflight": {
+    "target": "https://github.com/jiangyuhan0318-July/figure-foundry",
+    "homepage_language": "English",
+    "chinese_readme": "README.zh-CN.md",
+    "workflow_example": "gallery/figures/23_flowchart.png",
+    "public_files_excluding_archives": 124,
+    "private_path_or_credential_pattern_matches": [],
+    "excluded": [
+      "local upstream audit copies",
+      "pre-rename archive",
+      "Python caches",
+      "Git metadata"
+    ],
+    "root_license": "Apache-2.0",
+    "source_notices_retained": true
+  }
+}

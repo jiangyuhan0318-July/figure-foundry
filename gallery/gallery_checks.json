@@ -1,0 +1,411 @@
+{
+  "skill": "figure-foundry",
+  "synthetic": true,
+  "seed": 261026,
+  "records": [
+    {
+      "id": "01_grouped_bar",
+      "title": "Grouped bar",
+      "title_zh": "分组柱状图",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "Mean ± SD; n=8 per cell",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "01_grouped_bar.png",
+        "svg": "01_grouped_bar.svg",
+        "pdf": "01_grouped_bar.pdf"
+      }
+    },
+    {
+      "id": "02_trend",
+      "title": "Trend + uncertainty",
+      "title_zh": "趋势与误差带",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "Mean ± SD across 8 trajectories",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "02_trend.png",
+        "svg": "02_trend.svg",
+        "pdf": "02_trend.pdf"
+      }
+    },
+    {
+      "id": "03_paired",
+      "title": "Paired slope plot",
+      "title_zh": "配对斜率图",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "14 matched units; individual observations",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "03_paired.png",
+        "svg": "03_paired.svg",
+        "pdf": "03_paired.pdf"
+      }
+    },
+    {
+      "id": "04_forest",
+      "title": "Forest / interval plot",
+      "title_zh": "森林与区间图",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "95% t intervals; 12 paired units per row",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "04_forest.png",
+        "svg": "04_forest.svg",
+        "pdf": "04_forest.pdf"
+      }
+    },
+    {
+      "id": "05_lollipop",
+      "title": "Lollipop ranking",
+      "title_zh": "棒棒糖排序图",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "Assigned signal strengths; stems start at zero",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "05_lollipop.png",
+        "svg": "05_lollipop.svg",
+        "pdf": "05_lollipop.pdf"
+      }
+    },
+    {
+      "id": "06_waterfall",
+      "title": "Waterfall",
+      "title_zh": "瀑布图",
+      "group": 1,
+      "palette": "warm-orange",
+      "note": "Signed changes reconcile with final total",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "06_waterfall.png",
+        "svg": "06_waterfall.svg",
+        "pdf": "06_waterfall.pdf"
+      }
+    },
+    {
+      "id": "07_box",
+      "title": "Box + observations",
+      "title_zh": "箱线与观测点",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "Median / IQR; 60 observations per group",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "07_box.png",
+        "svg": "07_box.svg",
+        "pdf": "07_box.pdf"
+      }
+    },
+    {
+      "id": "08_violin",
+      "title": "Violin distribution",
+      "title_zh": "小提琴分布图",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "Density + median / IQR; n=60 per group",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "08_violin.png",
+        "svg": "08_violin.svg",
+        "pdf": "08_violin.pdf"
+      }
+    },
+    {
+      "id": "09_histogram",
+      "title": "Histogram + KDE",
+      "title_zh": "直方与密度图",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "Density normalization; Gaussian KDE",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "09_histogram.png",
+        "svg": "09_histogram.svg",
+        "pdf": "09_histogram.pdf"
+      }
+    },
+    {
+      "id": "10_ridge",
+      "title": "Ridgeline density",
+      "title_zh": "山脊密度图",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "Five batches; 120 values per batch",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "10_ridge.png",
+        "svg": "10_ridge.svg",
+        "pdf": "10_ridge.pdf"
+      }
+    },
+    {
+      "id": "11_regression",
+      "title": "Scatter + regression",
+      "title_zh": "回归散点图",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "OLS line; 95% interval for mean response",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "11_regression.png",
+        "svg": "11_regression.svg",
+        "pdf": "11_regression.pdf"
+      }
+    },
+    {
+      "id": "12_bubble",
+      "title": "Bubble plot",
+      "title_zh": "气泡图",
+      "group": 2,
+      "palette": "purple-blue-pink",
+      "note": "Marker area encodes assigned volume",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "12_bubble.png",
+        "svg": "12_bubble.svg",
+        "pdf": "12_bubble.pdf"
+      }
+    },
+    {
+      "id": "13_heatmap",
+      "title": "Correlation heat map",
+      "title_zh": "相关热图",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "Pearson r from 100 simulated observations",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "13_heatmap.png",
+        "svg": "13_heatmap.svg",
+        "pdf": "13_heatmap.pdf"
+      }
+    },
+    {
+      "id": "14_pca",
+      "title": "PCA embedding",
+      "title_zh": "PCA降维图",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "SVD of standardized data; 135 observations",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "14_pca.png",
+        "svg": "14_pca.svg",
+        "pdf": "14_pca.pdf"
+      }
+    },
+    {
+      "id": "15_roc",
+      "title": "ROC curves",
+      "title_zh": "ROC曲线",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "120 positives / 280 negatives; actual ranked AUC",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "15_roc.png",
+        "svg": "15_roc.svg",
+        "pdf": "15_roc.pdf"
+      }
+    },
+    {
+      "id": "16_pr",
+      "title": "Precision–recall curves",
+      "title_zh": "PR曲线",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "AP from ranked predictions; baseline = prevalence",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "16_pr.png",
+        "svg": "16_pr.svg",
+        "pdf": "16_pr.pdf"
+      }
+    },
+    {
+      "id": "17_volcano",
+      "title": "Volcano plot",
+      "title_zh": "火山图",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "Welch tests + BH correction; n=12 per group",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "17_volcano.png",
+        "svg": "17_volcano.svg",
+        "pdf": "17_volcano.pdf"
+      }
+    },
+    {
+      "id": "18_survival",
+      "title": "Kaplan–Meier curves",
+      "title_zh": "生存曲线",
+      "group": 3,
+      "palette": "skin-blue",
+      "note": "60 per cohort; ticks indicate censoring",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "18_survival.png",
+        "svg": "18_survival.svg",
+        "pdf": "18_survival.pdf"
+      }
+    },
+    {
+      "id": "19_stacked",
+      "title": "Stacked composition",
+      "title_zh": "堆叠组成柱状图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "Mean fractions; 10 samples per batch",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "19_stacked.png",
+        "svg": "19_stacked.svg",
+        "pdf": "19_stacked.pdf"
+      }
+    },
+    {
+      "id": "20_area",
+      "title": "Stacked area",
+      "title_zh": "堆叠面积图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "Three positive shares normalized to 100%",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "20_area.png",
+        "svg": "20_area.svg",
+        "pdf": "20_area.pdf"
+      }
+    },
+    {
+      "id": "21_radar",
+      "title": "Radar profile",
+      "title_zh": "雷达图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "All axes use assigned 0–100 benefit scores",
+      "kind": "quantitative",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "21_radar.png",
+        "svg": "21_radar.svg",
+        "pdf": "21_radar.pdf"
+      }
+    },
+    {
+      "id": "22_network",
+      "title": "Relationship network",
+      "title_zh": "关系网络图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "Toy undirected graph; width = assigned weight",
+      "kind": "schematic",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "22_network.png",
+        "svg": "22_network.svg",
+        "pdf": "22_network.pdf"
+      }
+    },
+    {
+      "id": "23_flowchart",
+      "title": "Decision workflow",
+      "title_zh": "判断流程图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "Toy logic; dashed line denotes retry",
+      "kind": "schematic",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "23_flowchart.png",
+        "svg": "23_flowchart.svg",
+        "pdf": "23_flowchart.pdf"
+      }
+    },
+    {
+      "id": "24_architecture",
+      "title": "Model architecture",
+      "title_zh": "模型架构图",
+      "group": 4,
+      "palette": "purple-blue-pink",
+      "note": "Toy model; dashed paths are training-only",
+      "kind": "schematic",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "24_architecture.png",
+        "svg": "24_architecture.svg",
+        "pdf": "24_architecture.pdf"
+      }
+    },
+    {
+      "id": "gallery_01",
+      "title": "Comparisons & change",
+      "kind": "contact_sheet",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "gallery_01.png",
+        "svg": "gallery_01.svg",
+        "pdf": "gallery_01.pdf"
+      }
+    },
+    {
+      "id": "gallery_02",
+      "title": "Distributions & relationships",
+      "kind": "contact_sheet",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "gallery_02.png",
+        "svg": "gallery_02.svg",
+        "pdf": "gallery_02.pdf"
+      }
+    },
+    {
+      "id": "gallery_03",
+      "title": "Scientific analysis",
+      "kind": "contact_sheet",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "gallery_03.png",
+        "svg": "gallery_03.svg",
+        "pdf": "gallery_03.pdf"
+      }
+    },
+    {
+      "id": "gallery_04",
+      "title": "Composition & structure",
+      "kind": "contact_sheet",
+      "text_outside_canvas": [],
+      "files": {
+        "png": "gallery_04.png",
+        "svg": "gallery_04.svg",
+        "pdf": "gallery_04.pdf"
+      }
+    }
+  ]
+}
