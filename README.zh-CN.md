@@ -64,9 +64,62 @@ FigureFoundry 是经过筛选、改写和重新组合形成的科研绘图 skill
 
 ## 安装与调用
 
-把完整的[skill/figure-foundry](skill/figure-foundry)目录复制到你的skills目录。Codex默认本地路径为`~/.codex/skills/figure-foundry/`。请一起保留参考文件、配色、辅助脚本和许可文件。
+### 直接让编程助手安装
 
-调用示例：
+在 **Codex** 中向内置安装器发送：
+
+```text
+$skill-installer 安装以下地址中的技能：
+https://github.com/jiangyuhan0318-July/figure-foundry/tree/main/skill/figure-foundry
+```
+
+在 **Claude Code** 中发送：
+
+```text
+从 https://github.com/jiangyuhan0318-July/figure-foundry 安装FigureFoundry。
+将完整的skill/figure-foundry目录复制到~/.claude/skills/figure-foundry，
+包含参考文件、配色、脚本和许可文件。安装后确认/figure-foundry可用。
+```
+
+技能子目录URL明确指出仓库中可以安装的部分。下载需要联网，安装需要本地文件写入权限；公开仓库可不登录GitHub直接下载。
+
+### 手动安装
+
+克隆仓库，或下载并解压[技能ZIP](figure-foundry-skill.zip)。复制完整的`figure-foundry`目录，一起保留参考、配色、帮助脚本和许可。
+
+| 客户端 | 个人安装目录 | 仅当前项目 | 调用方式 |
+|---|---|---|---|
+| Codex | `~/.agents/skills/figure-foundry/` | `.agents/skills/figure-foundry/` | `$figure-foundry` |
+| Claude Code | `~/.claude/skills/figure-foundry/` | `.claude/skills/figure-foundry/` | `/figure-foundry` |
+
+上表依据当前[Codex官方文档](https://learn.chatgpt.com/docs/build-skills)和[Claude Code官方文档](https://code.claude.com/docs/en/skills)。Codex内置安装器会使用其配置的技能目录；部分安装环境使用`~/.codex/skills/`。
+
+首次安装到个人目录，先执行：
+
+```bash
+git clone https://github.com/jiangyuhan0318-July/figure-foundry.git
+cd figure-foundry
+```
+
+**macOS/Linux shell：**选择客户端目录，再复制。
+
+```bash
+skill_root="$HOME/.agents/skills"  # Codex；Claude Code改为"$HOME/.claude/skills"
+mkdir -p "$skill_root"
+cp -R skill/figure-foundry "$skill_root/"
+```
+
+**Windows PowerShell：**
+
+```powershell
+$skillRoot = Join-Path $HOME '.agents\skills'  # Codex；Claude Code改为'.claude\skills'
+New-Item -ItemType Directory -Force -Path $skillRoot | Out-Null
+Copy-Item -LiteralPath .\skill\figure-foundry -Destination $skillRoot -Recurse
+```
+
+在目标项目中新开会话，使用表中的对应命令。仅当前项目使用时，复制到该项目内的对应目录即可。
+
+Codex调用示例：
 
 ```text
 $figure-foundry 用暖橙组绘制这个CSV。
@@ -74,12 +127,18 @@ $figure-foundry 用暖橙组绘制这个CSV。
 交付绘图源码和SVG/PDF。
 ```
 
+Claude Code调用示例：
+
 ```text
-$figure-foundry 把这段方法画成可编辑SVG。
+/figure-foundry 把这段方法画成可编辑SVG。
 保留输入分支，用不同线型区分训练专用连接。
 ```
 
-Skill提供流程与辅助资源。本仓库示例实际使用Python、Matplotlib、NumPy和SciPy绘制；Origin可按实际编辑需求接入，当前示例未调用Origin或原生PPTX路线。
+安装技能会复制流程与资源，Python依赖需要单独安装。Matplotlib路线使用包含`matplotlib`、`numpy`、`scipy`的Python环境。完整复跑示例及检查使用Python 3.12+和[requirements.txt](requirements.txt)，已在空Python 3.13虚拟环境中验证。Origin可按实际编辑需求接入，当前示例未调用Origin或原生PPTX路线。
+
+### 安装验证范围
+
+已在Windows上无GitHub凭据下载公开仓库，用Codex安装器安装到全新目录；Codex CLI 0.147.0识别到项目技能，Claude Code 2.1.260列出了对应命令。空Python 3.13虚拟环境从公开PyPI安装固定依赖后重新运行示例，详见[安装验证记录](audit/installation-verification.json)。客户端发现与脚本执行分别测试，未评测由模型自主完成的安装对话。macOS/Linux复制命令依据官方目录规范编写，未在对应系统实跑。
 
 ## 复跑
 

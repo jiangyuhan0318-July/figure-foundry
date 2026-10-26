@@ -66,9 +66,63 @@ The original three-panel demonstration also includes [CSV data](demo/synthetic_d
 
 ## Install and use
 
-Copy the entire [skill/figure-foundry](skill/figure-foundry) folder into your skills directory. For Codex, the default local destination is `~/.codex/skills/figure-foundry/`. Keep its references, assets, helper, and license files together.
+### Install through your coding agent
 
-Invoke it with a concrete figure request:
+In **Codex**, paste this prompt to the built-in installer:
+
+```text
+$skill-installer Install the skill from
+https://github.com/jiangyuhan0318-July/figure-foundry/tree/main/skill/figure-foundry
+```
+
+In **Claude Code**, paste:
+
+```text
+Install FigureFoundry from https://github.com/jiangyuhan0318-July/figure-foundry.
+Copy the complete skill/figure-foundry directory into
+~/.claude/skills/figure-foundry, including references, assets, scripts and licenses.
+Confirm that /figure-foundry is available after installation.
+```
+
+The skill-directory URL identifies the installable package inside this repository. Downloading requires internet access; installation requires permission to write local files. A GitHub account is not required to download it.
+
+### Manual installation
+
+Clone the repository, or download and extract [the skill ZIP](figure-foundry-skill.zip). Copy the entire `figure-foundry` folder, keeping its references, assets, helper, and license files together.
+
+| Client | Personal installation | Project-only installation | Invocation |
+|---|---|---|---|
+| Codex | `~/.agents/skills/figure-foundry/` | `.agents/skills/figure-foundry/` | `$figure-foundry` |
+| Claude Code | `~/.claude/skills/figure-foundry/` | `.claude/skills/figure-foundry/` | `/figure-foundry` |
+
+The table follows the current [Codex documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code documentation](https://code.claude.com/docs/en/skills). Codex's bundled installer chooses its configured skills location; some installations use `~/.codex/skills/`.
+
+For a fresh personal installation, first run:
+
+```bash
+git clone https://github.com/jiangyuhan0318-July/figure-foundry.git
+cd figure-foundry
+```
+
+**macOS/Linux shell:** choose the client directory, then copy:
+
+```bash
+skill_root="$HOME/.agents/skills"  # Codex; use "$HOME/.claude/skills" for Claude Code
+mkdir -p "$skill_root"
+cp -R skill/figure-foundry "$skill_root/"
+```
+
+**Windows PowerShell:**
+
+```powershell
+$skillRoot = Join-Path $HOME '.agents\skills'  # Codex; use '.claude\skills' for Claude Code
+New-Item -ItemType Directory -Force -Path $skillRoot | Out-Null
+Copy-Item -LiteralPath .\skill\figure-foundry -Destination $skillRoot -Recurse
+```
+
+Start a new session in the target project and use the invocation shown in the table. For a project-only installation, copy into that project's corresponding directory instead.
+
+In Codex, invoke it with a concrete figure request:
 
 ```text
 $figure-foundry Plot this CSV using the warm-orange palette.
@@ -76,12 +130,18 @@ Show independent observations, define the error bars,
 inspect the rendered image, and deliver editable source plus SVG/PDF.
 ```
 
+In Claude Code:
+
 ```text
-$figure-foundry Draw this method as an editable SVG.
+/figure-foundry Draw this method as an editable SVG.
 Preserve the input branches and distinguish training-only connections.
 ```
 
-The skill supplies instructions and resources. These examples were executed with **Python, Matplotlib, NumPy, and SciPy**. Origin is optional; native PPTX and Origin execution have not been exercised in this repository.
+Installing the skill copies instructions and resources; Python packages are installed separately. For the Matplotlib route, use an available Python environment with `matplotlib`, `numpy`, and `scipy`. To reproduce all examples and checks, use Python 3.12+ and [requirements.txt](requirements.txt); a clean Python 3.13 environment was tested. Origin is optional; native PPTX and Origin execution have not been exercised in this repository.
+
+### Installation checks performed
+
+On Windows, the public repository was downloaded without GitHub credentials, the Codex installer installed the skill into a fresh destination, Codex CLI 0.147.0 discovered the project skill, and Claude Code 2.1.260 listed its command. A new Python 3.13 virtual environment installed the pinned requirements from public PyPI and reran the examples. See the [installation verification record](audit/installation-verification.json). Client discovery and script execution were tested separately; an autonomous model-driven installation conversation was not evaluated. macOS/Linux copy commands follow the documented directory layout and were not executed on those systems.
 
 ## Reproduce the examples
 
