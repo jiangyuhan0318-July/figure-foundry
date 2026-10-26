@@ -4,11 +4,11 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [24种图型画廊](gallery/GALLERY.md) · [下载技能包](figure-foundry-skill.zip)
 
-FigureFoundry 是 July 自己筛选、改写和重新组合的科研绘图 skill。我们借鉴了 [Diagram Design](https://github.com/cathrynlavery/diagram-design)、[AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery) 和 [Open Research Skills](https://github.com/gxCaesar/open-research-skills) 的实践经验，将数据图与方法示意图整合成一套流程，并加入自己的分流规则、三组配色、导出帮助脚本和可检查的示例。
+FigureFoundry 是经过筛选、改写和重新组合形成的科研绘图 skill。本项目借鉴 [Diagram Design](https://github.com/cathrynlavery/diagram-design)、[AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery) 和 [Open Research Skills](https://github.com/gxCaesar/open-research-skills) 的实践经验，将数据图与方法示意图整合成一套流程，并加入统一的分流规则、三组配色、导出帮助脚本和可检查的示例。
 
 **明确问题 → 根据来源设计 → 构建可编辑图件 → 查看真实渲染 → 核对并交付。**
 
-## 我们重新组合后，改进在哪里
+## 本 skill 的整合改进
 
 | 设计选择 | FigureFoundry 的做法 | 实际价值 |
 |---|---|---|
@@ -121,7 +121,7 @@ python gallery/verify_gallery.py
 
 ## 来源与许可
 
-由**July**创建，Codex协助完成。感谢三个选中来源：
+本项目借鉴了以下三个来源的实践经验：
 
 - [Diagram Design](https://github.com/cathrynlavery/diagram-design)：视觉层次、语义关系、连线和布局检查；MIT。
 - [AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery)：实际查看参考图、稳定的类别与风格偏好；MIT。
@@ -129,4 +129,4 @@ python gallery/verify_gallery.py
 
 本项目筛选、改写并重新组织这些经验，形成新的skill。来源固定提交、选择标准和冲突处理见[决策记录](skill/figure-foundry/references/sources-and-decisions.md)及[带日期的仓库快照](audit/repository-snapshot.json)。
 
-新增代码与整合部分采用[Apache-2.0](LICENSE)，原始MIT声明保留在[LICENSES](LICENSES)，归属见[NOTICE](NOTICE)。公开的图件与数据是我们生成的合成示例，未打包第三方参考图库或论文数据。
+新增代码与整合部分采用[Apache-2.0](LICENSE)，原始MIT声明保留在[LICENSES](LICENSES)，归属见[NOTICE](NOTICE)。本项目公开的图件与数据均为合成示例，未打包第三方参考图库或论文数据。

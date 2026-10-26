@@ -4,7 +4,7 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [24-example gallery](gallery/README.md) · [Download the skill](figure-foundry-skill.zip)
 
-FigureFoundry is a scientific-figure skill created by July through deliberate selection, rewriting, and recombination of practical ideas from [Diagram Design](https://github.com/cathrynlavery/diagram-design), [AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery), and [Open Research Skills](https://github.com/gxCaesar/open-research-skills). It brings numerical plots and method diagrams into one workflow, with its own routing, saved palettes, export helper, and verification examples.
+FigureFoundry is a scientific-figure skill built through deliberate selection, rewriting, and recombination of practical ideas from [Diagram Design](https://github.com/cathrynlavery/diagram-design), [AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery), and [Open Research Skills](https://github.com/gxCaesar/open-research-skills). The project brings numerical plots and method diagrams into one workflow, with integrated routing, saved palettes, an export helper, and verification examples.
 
 **Brief → source-aware design → editable construction → inspect the render → verify and deliver.**
 
@@ -123,7 +123,7 @@ Colors are stored in [palettes.json](skill/figure-foundry/assets/palettes.json).
 
 ## Acknowledgments and license
 
-Created by **July**, with Codex assistance. FigureFoundry draws on the following selected source instructions:
+This project draws on the following selected source instructions:
 
 - [Diagram Design](https://github.com/cathrynlavery/diagram-design): visual hierarchy, meaningful relationships, connector and layout checks; MIT.
 - [AgentFigureGallery](https://github.com/Dsadd4/AgentFigureGallery): inspecting actual visual references and preserving category/style preferences; MIT.
@@ -131,4 +131,4 @@ Created by **July**, with Codex assistance. FigureFoundry draws on the following
 
 The instructions were selected, rewritten, and reorganized into a new skill. Source commits, selection criteria, and conflict resolutions are recorded in the [decision log](skill/figure-foundry/references/sources-and-decisions.md) and [dated repository snapshot](audit/repository-snapshot.json).
 
-New work and the synthesis are licensed under [Apache-2.0](LICENSE). Original MIT notices are retained in [LICENSES](LICENSES), with attribution in [NOTICE](NOTICE). The published figures and datasets here are our synthetic examples; third-party reference artwork and datasets are not included.
+New work and the synthesis are licensed under [Apache-2.0](LICENSE). Original MIT notices are retained in [LICENSES](LICENSES), with attribution in [NOTICE](NOTICE). The figures and datasets published in this project are synthetic examples; third-party reference artwork and datasets are not included.
