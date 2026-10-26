@@ -139,10 +139,6 @@ Preserve the input branches and distinguish training-only connections.
 
 Installing the skill copies instructions and resources; Python packages are installed separately. For the Matplotlib route, use an available Python environment with `matplotlib`, `numpy`, and `scipy`. To reproduce all examples and checks, use Python 3.12+ and [requirements.txt](requirements.txt); a clean Python 3.13 environment was tested. Origin is optional; native PPTX and Origin execution have not been exercised in this repository.
 
-### Installation checks performed
-
-On Windows, the public repository was downloaded without GitHub credentials, the Codex installer installed the skill into a fresh destination, Codex CLI 0.147.0 discovered the project skill, and Claude Code 2.1.260 listed its command. A new Python 3.13 virtual environment installed the pinned requirements from public PyPI and reran the examples. See the [installation verification record](audit/installation-verification.json). Client discovery and script execution were tested separately; an autonomous model-driven installation conversation was not evaluated. macOS/Linux copy commands follow the documented directory layout and were not executed on those systems.
-
 ## Reproduce the examples
 
 Tested with Python 3.13 and the package versions in [requirements.txt](requirements.txt). Run these commands from the repository root:

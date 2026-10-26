@@ -136,10 +136,6 @@ Claude Code调用示例：
 
 安装技能会复制流程与资源，Python依赖需要单独安装。Matplotlib路线使用包含`matplotlib`、`numpy`、`scipy`的Python环境。完整复跑示例及检查使用Python 3.12+和[requirements.txt](requirements.txt)，已在空Python 3.13虚拟环境中验证。Origin可按实际编辑需求接入，当前示例未调用Origin或原生PPTX路线。
 
-### 安装验证范围
-
-已在Windows上无GitHub凭据下载公开仓库，用Codex安装器安装到全新目录；Codex CLI 0.147.0识别到项目技能，Claude Code 2.1.260列出了对应命令。空Python 3.13虚拟环境从公开PyPI安装固定依赖后重新运行示例，详见[安装验证记录](audit/installation-verification.json)。客户端发现与脚本执行分别测试，未评测由模型自主完成的安装对话。macOS/Linux复制命令依据官方目录规范编写，未在对应系统实跑。
-
 ## 复跑
 
 已使用Python 3.13和[requirements.txt](requirements.txt)记录的包版本运行。在仓库根目录执行：
